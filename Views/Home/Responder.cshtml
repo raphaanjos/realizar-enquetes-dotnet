@@ -1,0 +1,44 @@
+<!-- Cria um objeto do tipo resposta e armazena em um coleção -->
+@model _aula_06.Models.Resposta
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnqueteWeb! :: Resposta</title>
+</head>
+<body>
+    <div>
+        <h1>EnqueteWeb!</h1>
+        <h2>Você teria coragem de fazer uma viagem sem volta para Marte?</h2>
+        <h4>Preencha os campos e marque sua resposta</h4>
+        <div style="margin: 10px 20px;padding: 4px;background-color: #33333;">
+            <form method="POST">
+                <div style="margin-bottom: 5px;">
+                    <label for="txtNome">Seu Nome: </label>
+                    <input type="text" name="Nome" id="txtNome">
+                </div>
+                <div style="margin-bottom: 5px;">
+                    <label for="txtEmail">Seu Email: </label>
+                    <input type="email" name="Email" id="txtEmail">
+                </div>
+                <div>
+                    Resposta:
+                    <div>
+                        <input type="radio" id="rdSim" name="Sim" value="true">
+                        <label for="rdSim">Sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="rdNao" name="Sim" value="false">
+                        <label for="rdNao">Não</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Resposta">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
