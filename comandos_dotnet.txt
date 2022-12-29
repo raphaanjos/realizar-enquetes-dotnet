@@ -1,0 +1,5 @@
+* Criar arquivo global.json
+dotnet new globaljson --sdk-version 6.0.401 
+
+* Criar arquivos dentro de uma pasta do projeto
+dotnet new mvc --no-https --framework 6.0.401
